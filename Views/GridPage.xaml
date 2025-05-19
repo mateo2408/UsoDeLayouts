@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CisnerosM_UsodeLayouts.Views.GridPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>    
+            <BoxView Grid.Row="0" Grid.Column="0" Color="Aqua"/>
+            <Label Grid.Row="0" Grid.Column="0" Text="Row 0, Column0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <BoxView Grid.Row="0" Grid.Column="1" Color="Coral"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="Row 0, Column 1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <BoxView Grid.Row="1" Grid.Column="0" Color="Crimson"/>
+            <Label Grid.Row="1" Grid.Column="0" Text="Rox 1, Column 0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <BoxView Grid.Row="1" Grid.Column="1" Color="Beige"/>
+            <Button Grid.Row="1" Grid.Column="1"
+                    x:Name="ToStack"
+                    Text="Ir a Stack"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="ToStack_OnClicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

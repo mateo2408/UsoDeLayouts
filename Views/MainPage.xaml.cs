@@ -1,4 +1,6 @@
-﻿namespace CisnerosM_UsodeLayouts;
+﻿using CisnerosM_UsodeLayouts.Views;
+
+namespace CisnerosM_UsodeLayouts;
 
 public partial class MainPage : ContentPage
 {
@@ -19,5 +21,10 @@ public partial class MainPage : ContentPage
             CounterBtn.Text = $"Clicked {count} times";
 
         SemanticScreenReader.Announce(CounterBtn.Text);
+    }
+
+    private void ToGrid_OnClicked(object? sender, EventArgs e)
+    {
+        Navigation.PushAsync(new GridPage());
     }
 }
