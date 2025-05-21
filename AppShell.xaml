@@ -9,7 +9,6 @@
     Title="CisnerosM_UsodeLayouts">
 
     <ShellContent
-        Title="GridPage"
         ContentTemplate="{DataTemplate views:GridPage}"
         Route="GridPage" />
 

@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace CisnerosM_UsodeLayouts.Views;
 
-public partial class GridPage : ContentPage
+public partial class StackPage : ContentPage
 {
-    public GridPage()
+    public StackPage()
     {
         InitializeComponent();
     }
 
-    private void ToStack_OnClicked(object? sender, EventArgs e)
+    private void ToFlex_OnClicked(object? sender, EventArgs e)
     {
-        Navigation.PushAsync(new StackPage());
+        throw new NotImplementedException();
     }
 }
