@@ -4,6 +4,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CisnerosM_UsodeLayouts.Views.FlexPage">
     <ContentPage.Content>
+        <StackLayout>
+            <FlexLayout Direction="Row" Wrap="Wrap" AlignItems="Center">
+                <Button
+                    Text="Boton 1"
+                    WidthRequest="100"
+                    HeightRequest="50"
+                    Margin="4"/>
+                <Button
+                    Text="Boton 2"
+                    WidthRequest="100"
+                    HeightRequest="50"
+                    Margin="4"/>
+                <Button
+                    Text="Boton 3"
+                    WidthRequest="100"
+                    HeightRequest="50"
+                    Margin="4"/>
+                <Button
+                Text="Boton 4"
+                WidthRequest="100"
+                HeightRequest="50"
+                Margin="4"/>
+            </FlexLayout>
+            <Button x:Name="ToAbsolute"
+                    Text="Ir a Absolut"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="ToAbsolute_OnClicked"/>
+        </StackLayout>
         
     </ContentPage.Content>
 </ContentPage>

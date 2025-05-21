@@ -12,4 +12,9 @@ public partial class FlexPage : ContentPage
     {
         InitializeComponent();
     }
+
+    private void ToAbsolute_OnClicked(object? sender, EventArgs e)
+    {
+        throw new NotImplementedException();
+    }
 }

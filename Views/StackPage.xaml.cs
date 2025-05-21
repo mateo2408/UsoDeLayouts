@@ -15,6 +15,7 @@ public partial class StackPage : ContentPage
 
     private void ToFlex_OnClicked(object? sender, EventArgs e)
     {
+        Navigation.PushAsync(new FlexPage());
         throw new NotImplementedException();
     }
 }
