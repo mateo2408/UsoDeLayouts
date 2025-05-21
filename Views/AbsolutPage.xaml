@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CisnerosM_UsodeLayouts.Views.AbsolutPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            
+            <Image Source="star_wars_logo.png"
+                   Aspect="AspectFit"
+                   AbsoluteLayout.LayoutBounds="0.5,0.05,300,300"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <ScrollView AbsoluteLayout.LayoutBounds="0,1.05,1,0.75"
+                        AbsoluteLayout.LayoutFlags="All">
+                <Label FontSize="20" LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="La Guerra de las Galaxias, o Star Wars en inglés, es una franquicia de ciencia ficción que incluye películas, novelas, cómics, videojuegos y juguetes. Comenzó en 1977 con el estreno de la primera película, La Guerra de las Galaxias, y ha evolucionado a una saga de tres trilogías que se conoce como la Saga Skywalker."/>
+                            <Span Text="&#10;&#10;El universo de Star Wars:&#10;Películas:&#10;" FontAttributes="Bold"/>
+                            <Span Text="La saga se centra en tres trilogías, que son la trilogía original (1977-1983), la trilogía precuela (1999-2005), y la trilogía de secuelas (2015-2019)."/>
+                            <Span Text="&#10;&#10;Series de television:&#10;" FontAttributes="Bold"/>
+                            <Span Text="También existen series animadas y de acción real, como La Guerra de los Clones, The Mandalorian y Obi-Wan Kenobi."/>
+                            <Span Text="&#10;&#10;Otros medios:&#10;" FontAttributes="Bold"/>
+                            <Span Text="La franquicia se extiende a novelas, cómics, videojuegos y juguetes, creando un amplio universo de ficción."/>
+                            <Span Text="&#10;&#10;Cronologia:&#10;" FontAttributes="Bold"/>
+                            <Span Text="La saga se desarrolla en una galaxia ficticia, con planetas y sistemas, y cuenta la historia de una guerra civil entre la República Galáctica y el Imperio Galáctico. Las historias se cuentan a lo largo de eras, con eras definidas en una línea de tiempo mitológica que contextualiza su pasado, presente y futuro."/>
+                            <Span Text="&#10;&#10;Impacto Cultural:&#10;" FontAttributes="Bold"/>
+                            <Span Text="Star Wars es una de las franquicias más exitosas de la historia, con un gran impacto en la cultura pop. La franquicia ha generado una gran cantidad de productos relacionados, incluyendo novelas, cómics, videojuegos y juguetes."/>
+                            <Span Text="&#10;"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </ScrollView>
+            
+            <Button x:Name="ToGrid"
+                Text="Ir a Grid"
+                AbsoluteLayout.LayoutBounds="1,1,140,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Clicked="ToGrid_OnClicked"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

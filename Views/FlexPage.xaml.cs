@@ -15,6 +15,7 @@ public partial class FlexPage : ContentPage
 
     private void ToAbsolute_OnClicked(object? sender, EventArgs e)
     {
+        Navigation.PushAsync(new AbsolutPage());
         throw new NotImplementedException();
     }
 }
